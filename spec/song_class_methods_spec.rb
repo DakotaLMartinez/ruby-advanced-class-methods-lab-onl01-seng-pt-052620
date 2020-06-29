@@ -15,6 +15,7 @@ describe "Song Class Methods" do
       song = Song.new_by_name("Blank Space")
 
       expect(song.name).to eq("Blank Space")
+      expect(Song.all).not_to include(song)
     end
   end
 
